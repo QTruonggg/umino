@@ -256,7 +256,6 @@ img {
 }
 
 .slideshow-container {
-  max-width: 1920px;
   position: relative;
   margin: auto;
 }
@@ -378,6 +377,7 @@ img {
 .categories {
   display: flex;
   margin-top: 6px;
+  justify-content: center;
 }
 
 .categories-left,
