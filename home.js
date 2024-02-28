@@ -1,6 +1,10 @@
-$('#search-icon').click(function() {
-    console.log("123");
-    $('#search-input').toggle();
+document.getElementById('search-icon').addEventListener('click', function() {
+  var searchInput = document.getElementById('search-input');
+  if (searchInput.style.display === 'none') {
+      searchInput.style.display = 'block';
+  } else {
+      searchInput.style.display = 'none';
+  }
 });
 
 function toggleMenu() {
