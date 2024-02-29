@@ -357,7 +357,6 @@ img {
   background-color: #000000;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -535,6 +534,7 @@ img {
   opacity: 1;
   width: 100%;
   height: auto;
+  object-fit: cover;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
@@ -651,6 +651,11 @@ img {
   gap: 30px;
   margin-top: 100px;
 }
+.banner-img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 .banner p {
   font-size: 30px;
@@ -713,6 +718,7 @@ img {
 .instagram-product img{
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 footer {
@@ -761,6 +767,10 @@ footer>div:first-child{
 
 .footer-logo-icon a {
   margin-right: 6px;
+}
+.footer-logo-icon a img{
+  width: 36px;
+  height: 36px;
 }
 
 .footer-categories {
@@ -897,9 +907,6 @@ footer>div:first-child{
   .banner > div {
     width: 30%;
     margin: 0;
-  }
-  .banner img {
-    width: 100%;
   }
   .shop-instagram-products {
     justify-content: center;
