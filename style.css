@@ -55,7 +55,7 @@ body {
 
 .top-header-right button,
 .footer-bottom-left button {
-  color: #555555;
+  color: #999999;
 }
 
 .dropdown {
@@ -535,7 +535,7 @@ img {
   width: 25%;
 }
 
-.sale > button:nth-child(1) {
+.sale > div:nth-child(1) {
   width: 50px;
   height: 25px;
   font-family: Jost;
@@ -544,12 +544,14 @@ img {
   line-height: 19px;
   letter-spacing: 0em;
   color: #ffffff;
-  border: none;
+  margin: 0;
+  text-align: center;
   border-radius: 30px;
   background: #d73f0f;
+  padding: 3px;
 }
 
-.sale > button:nth-child(2) {
+.sale > div:nth-child(2) {
   width: 75px;
   height: 25px;
   font-family: Jost;
@@ -558,22 +560,27 @@ img {
   line-height: 19px;
   letter-spacing: 0em;
   color: #ffffff;
-  border: none;
+  margin: 0;
+  text-align: center;
   border-radius: 30px;
   margin-top: 4px;
   background: #177983;
+  padding: 3px;
 }
 
-.sale > button:nth-child(3) {
+.sale > div:nth-child(3) {
   width: 70px;
   height: 25px;
+  font-size: 13px;
   border-radius: 30px;
-  border: none;
+  margin: 0;
+  text-align: center;
   background: #757575;
   color: #ffffff;
+  padding: 3px;
 }
 
-.sale button:empty {
+.sale div:empty {
   display: none;
 }
 
