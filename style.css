@@ -1079,17 +1079,6 @@ footer>div:first-child{
   .icon{
     width: 12%;
   }
-  .prev{
-    left: 12px;
-  }
-  .next{
-    right: 12px;
-  }
-  .prev, .next{
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-  }
   .text{
     top: 20%;
     font-size: 10px;
