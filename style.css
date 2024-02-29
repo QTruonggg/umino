@@ -5,6 +5,7 @@
 
 body {
   font-family: "Jost", sans-serif !important;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -77,6 +78,7 @@ body {
   z-index: 1;
 }
 
+.dropdown-content div,
 .dropdown-content a {
   float: none;
   color: black;
@@ -92,7 +94,8 @@ body {
   border-bottom: 1px solid;
 }
 
-.dropdown-content a:hover {
+.dropdown-content div:hover,
+.dropdown-content a:hover{
   background-color: #ddd;
   font-weight: bold;
 }
@@ -276,12 +279,12 @@ img {
 }
 
 .prev {
-  top: 47%;
+  top: 49%;
   left: 30px;
 }
 
 .next {
-  top: 47%;
+  top: 49%;
   right: 30px;
 }
 
@@ -295,8 +298,8 @@ img {
   color: black;
   font-size: 16px;
   position: absolute;
-  top: 30%;
-  left: 12%;
+  top: 32%;
+  left: 9.75%;
   width: 40%;
   text-align: center;
 }
@@ -308,7 +311,7 @@ img {
   letter-spacing: 0em;
   text-align: center;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 19px;
 }
 
 .text button {
@@ -324,13 +327,14 @@ img {
   letter-spacing: 0em;
   text-align: center;
   cursor: pointer;
-  margin-top: 32px;
+  margin-top: 50px;
   border: none;
+  text-transform: uppercase;
 }
 
 .dot-icon {
   position: absolute;
-  bottom: 0;
+  bottom: 24px;
   width: 100%;
   text-align: center;
 }
@@ -387,11 +391,11 @@ img {
   margin: 0;
 }
 
-.categories-left:hover button,
-.categories-center-bottom-left:hover button,
-.categories-center-bottom-right:hover button,
-.categories-right:hover button,
-.categories-center-top:hover button {
+.categories-left:hover .href,
+.categories-center-bottom-left:hover .href,
+.categories-center-bottom-right:hover .href,
+.categories-right:hover .href,
+.categories-center-top:hover .href {
   background-color: #757575;
 }
 
@@ -403,20 +407,23 @@ img {
   text-align: center;
 }
 
-.categories button {
+.href {
   width: 180px;
   height: 50px;
-  padding: 10px;
+  padding: 12px;
   border-radius: 30px;
   background: #ffffff;
-  border: none;
   cursor: pointer;
-  font-family: Jost;
+  text-align: center;
+}
+
+.href a{
   font-size: 16px;
   font-weight: 600;
   line-height: 23px;
   letter-spacing: 0em;
-  text-align: center;
+  text-decoration: none;
+  color: #111111;
 }
 
 .categories img {
@@ -453,7 +460,7 @@ img {
 
 .top-trending,
 .you-must-have{
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .top-trending-title h1 {
@@ -461,7 +468,7 @@ img {
   font-weight: 400;
   line-height: 65px;
   letter-spacing: 0em;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 
 .top-trending-title p {
@@ -469,7 +476,7 @@ img {
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0em;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .top-trending-products {
@@ -506,11 +513,8 @@ img {
   text-align: center;
 }
 
-.middle button {
+.middle {
   cursor: pointer;
-  padding: 0;
-  background: none;
-  border: none;
 }
 
 .middle i {
@@ -526,8 +530,8 @@ img {
 
 .sale {
   position: absolute;
-  top: 4%;
-  left: 6%;
+  top: 3%;
+  left: 4.5%;
   width: 25%;
 }
 
@@ -585,14 +589,14 @@ img {
 }
 
 .products-title i {
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 9px;
+  line-height: 8px;
   letter-spacing: 0.06em;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .products-title span {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0em;
@@ -607,8 +611,8 @@ img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  margin-right: 8px;
-  margin-top: 8px;
+  margin-right: 6px;
+  margin-top: 7px;
   cursor: pointer;
 }
 
@@ -627,13 +631,13 @@ img {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 30px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .banner p {
   font-size: 30px;
   font-weight: 400;
-  line-height: 43px;
+  line-height: 44px;
   letter-spacing: 0em;
   text-align: left;
   padding-top: 20px;
@@ -647,7 +651,7 @@ img {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .banner-left-line,
@@ -656,6 +660,7 @@ img {
   height: 2px;
   background-color: #000000;
   margin: 0;
+  margin-top: 4px;
 }
 
 .banner-center-line {
@@ -663,19 +668,21 @@ img {
   height: 2px;
   background-color: #000000;
   margin: 0;
+  margin-top: 4px;
 }
 
 .shop-instagram-products {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  margin-top: 40px;
+  margin-top: 42px;
+  justify-content: space-between;
 }
 
 .instagram-product {
   position: relative;
 }
 
-.instagram-product button {
+.instagram-product div {
   position: absolute;
   padding: 0;
   top: 4%;
@@ -693,14 +700,20 @@ footer {
 footer p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
   color: #555555;
 }
 
-footer h3 {
-  margin-bottom: 32px;
+footer h1 {
+  margin-bottom: 26px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 footer>div:first-child{
@@ -716,15 +729,15 @@ footer>div:first-child{
 }
 
 .footer-logo > img {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .footer-logo p {
-  margin-bottom: 8px;
+  /* margin-bottom: 5px; */
 }
 
 .footer-logo .last {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .footer-logo-icon a {
@@ -732,9 +745,9 @@ footer>div:first-child{
 }
 
 .footer-categories {
-  width: 16%;
+  width: 17%;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 105px;
 }
 
 .footer-categories-list {
@@ -747,7 +760,7 @@ footer>div:first-child{
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0em;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   text-decoration: none;
   color: #555555;
 }
@@ -758,24 +771,25 @@ footer>div:first-child{
 }
 
 .footer-service {
-  width: 16%;
+  width: 15%;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 105px;
 }
 
 .footer-email {
   width: 34%;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 105px;
+  padding-left: 30px;
 }
 
 .footer-email p {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .footer-email input {
-  max-width: 290px;
+  width: 290px;
   height: 50px;
   padding: 10px 20px 10px 20px;
   border-radius: 30px;
@@ -805,24 +819,28 @@ footer>div:first-child{
   padding-right: 24px;
 }
 
-.payment button {
+.payment{
+  display: flex;
+}
+
+.payment div {
   border: 1px solid #dedede;
   background: none;
   width: 43px;
   height: 26px;
   border-radius: 3px;
-  gap: 10px;
-  padding: 0;
+  padding: 0px 4px;
   cursor: pointer;
+  margin: 0 2px;
 }
 
 .hr-desktop{
-  margin: 80px 0;
+  margin: 100px 0;
   background-color: #EBEBEB;
   height: 1px; border: none;
 }
 .hr-footer{
-  margin: 50px 0 28px 0;
+  margin: 64px 0 34px 0;
   background-color: #EBEBEB;
   height: 1px; border: none;
 }
@@ -877,13 +895,20 @@ footer>div:first-child{
     padding-left: 32px;
   }
   .footer-bottom {
-    padding: 0 32px;
+    padding: 0px 32px 16px 32px;
   }
 }
 
 @media only screen and (max-width: 940px) {
+  .top-header{
+    display: none;
+  }
+  .mobile{
+    display: none;
+  }
   .navbar{
     position: relative;
+    padding: 0 12px;
   }
   .logo{
     order: 2;
@@ -904,6 +929,8 @@ footer>div:first-child{
     padding: 0;
     border: none;
     background: none;
+    width: 10%;
+    text-align: left;
   }
   .menu {
     position: relative;
@@ -923,11 +950,13 @@ footer>div:first-child{
     width: 120px;
     margin-top: 20px;
   }
-  .categories button{
+  .href{
     width: 100px;
     height: 32px;
+    padding: 4px;
+  }
+  .href a{
     font-size: 14px;
-    padding: 0;
   }
   .top-trending,
   .you-must-have{
@@ -996,9 +1025,6 @@ footer>div:first-child{
 }
 
 @media only screen and (max-width: 650px) {
-  .top-header{
-    padding: 0;
-  }
   .prev{
     left: 12px;
   }
@@ -1027,11 +1053,28 @@ footer>div:first-child{
   .footer-bottom-left{
     display: none;
   }
+  .top-trending-title p{
+    margin-bottom: 24px;
+  }
+  .shop-instagram-products{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0 12px;
+  }
+  .instagram-product{
+    display: inline-block;
+    width: 49.6%;
+  }
+  .instagram-product>img{
+    border-radius: 12px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  .top-header{
-    display: none;
+  .icon{
+    width: 12%;
   }
   .prev{
     left: 12px;
@@ -1067,12 +1110,14 @@ footer>div:first-child{
   .top-trending-title p{
     font-size: 12px;
   }
-  .categories button{
+  .href{
     width: 60px;
-    height: 20px;
-    font-size: 10px;
+    height: 26px;
     padding: 0;
     line-height: normal;
+  }
+  .href a{
+    font-size: 10px;
   }
   .sale > button:nth-child(1){
     width: 32px;
@@ -1098,6 +1143,9 @@ footer>div:first-child{
   footer p{
     font-size: 12px;
   }
+  footer>div:first-child{
+    flex-direction: column;
+  }
   .footer-logo p{
     margin: 0;
     margin-bottom: 4px;
@@ -1106,25 +1154,25 @@ footer>div:first-child{
   .footer-categories-list a{
     font-size: 12px;
   }
+  .footer-logo{
+    padding-top: 60px;
+  }
   .footer-logo,
   .footer-email{
-    width: 55%;
-    padding-left: 0;
+    width: 100%;
+    padding-left: 12px;
   }
   .footer-categories,
   .footer-service{
-    width: 40%;
-  }
-  .footer-email form{
-    text-align: center;
-    width: 85%;
-    margin: 0;
-  }
-  .footer-email>form>input{
     width: 100%;
+    padding-left: 12px;
+    padding-top: 40px;
   }
-  .footer-email>form>button{
-    margin-top: 12px;
+  .footer-email{
+    order: 4;
+  }
+  .footer-bottom{
+    flex-direction: column;
   }
 }
 
