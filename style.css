@@ -392,6 +392,10 @@ img {
   position: relative;
   margin: 0;
 }
+.categories-left,
+.categories-right{
+  width: 28vw;
+}
 
 .categories-left:hover .href,
 .categories-center-bottom-left:hover .href,
@@ -435,6 +439,7 @@ img {
 }
 
 .categories-center {
+  width: 44vw;
   margin: 0 6px;
 }
 
@@ -452,11 +457,13 @@ img {
 }
 
 .categories-center-bottom-left {
+  width: 50%;
   margin: 6px 3px 0 0;
   position: relative;
 }
 
 .categories-center-bottom-right {
+  width: 50%;
   margin: 6px 0 0 3px;
   position: relative;
 }
