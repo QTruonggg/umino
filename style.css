@@ -645,12 +645,6 @@ img {
   margin-top: 100px;
 }
 
-.banner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .banner p {
   font-size: 30px;
   font-weight: 400;
@@ -749,10 +743,7 @@ footer>div:first-child{
   margin: 0;
   padding-top: 100px;
 }
-.footer-logo-icon img{
-  width: 36px;
-  height: 36px;
-}
+
 .footer-logo>div:first-child>a>img {
   margin-bottom: 30px;
 }
@@ -899,6 +890,9 @@ footer>div:first-child{
   .banner > div {
     width: 30%;
     margin: 0;
+  }
+  .banner img {
+    width: 100%;
   }
   .shop-instagram-products {
     justify-content: center;
