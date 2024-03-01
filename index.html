@@ -111,68 +111,110 @@
             <i class="fa-solid fa-bars"></i>
           </div>
           <div class="menu-mb" id="menu">
-            <div class="">
-              <button class="">
-                Home
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up" style="display: none"></i>
-              </button>
-              <div class="menu-mb-list">
-                <a href="#" aria-label="Điều hướng đến trang chính">Home 1</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Home 2</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Home 3</a>
-              </div>
-            </div>
-            <div class="">
-              <button class="">
-                Shop
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up" style="display: none"></i>
-              </button>
-              <div class="menu-mb-list">
-                <a href="#" aria-label="Điều hướng đến trang chính">Shop 1</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Shop 2</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Shop 3</a>
-              </div>
-            </div>
-            <div class="">
-              <button class="">
-                Product
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up" style="display: none"></i>
-              </button>
-              <div class="menu-mb-list">
-                <a href="#" aria-label="Điều hướng đến trang chính">Shirt</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Trousers</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Shoe</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Hat</a>
-              </div>
-            </div>
-            <div class="">
-              <button class="">
-                Page
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up" style="display: none"></i>
-              </button>
-              <div class="menu-mb-list">
-                <a href="#" aria-label="Điều hướng đến trang chính">Page 1</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Page 2</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Page 3</a>
-              </div>
-            </div>
-            <div class="">
-              <button class="">
-                Blog
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up" style="display: none"></i>
-              </button>
-              <div class="menu-mb-list">
-                <a href="#" aria-label="Điều hướng đến trang chính">Blog...</a>
-              </div>
-            </div>
             <div>
-              <a href="#" aria-label="Điều hướng đến trang chính">Sale</a>
-              <a href="#" aria-label="Điều hướng đến trang chính">Buy Umino!</a>
+              <div class="menu-mb-title">
+                <div>MENU</div>
+                <div onclick="toggleMenu()"><i class="icon-x"></i></div>
+              </div>
+              <div class="menu-mb-content">
+                
+                <div class="">
+                  <div class="menu-mb-content-list" onclick="subMenu(this)">
+                    Home
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <div class="menu-mb-list">
+                    <div class="submenu-mb-title">
+                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
+                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
+                    </div>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Home 1</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Home 2</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Home 3</a>
+                  </div>
+                </div>
+                
+                <div class="">
+                  <div class="menu-mb-content-list" onclick="subMenu(this)">
+                    Shop
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <div class="menu-mb-list">
+                    <div class="submenu-mb-title">
+                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
+                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
+                    </div>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Shop 1</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Shop 2</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Shop 3</a>
+                  </div>
+                </div>
+              
+                <div class="">
+                  <div class="menu-mb-content-list" onclick="subMenu(this)">
+                    Product
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <div class="menu-mb-list">
+                    <div class="submenu-mb-title">
+                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
+                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
+                    </div>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Shirt</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Trousers</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Shoe</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Hat</a>
+                  </div>
+                </div>
+                
+                
+                <div class="">
+                  <div class="menu-mb-content-list" onclick="subMenu(this)">
+                    Page
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <div class="menu-mb-list">
+                    <div class="submenu-mb-title">
+                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
+                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
+                    </div>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Page 1</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Page 2</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Page 3</a>
+                  </div>
+                </div>
+                
+                <div class="">
+                  <div class="menu-mb-content-list" onclick="subMenu(this)">
+                    Blog
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <div class="menu-mb-list">
+                    <div class="submenu-mb-title">
+                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
+                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
+                    </div>
+                    <a href="#" aria-label="Điều hướng đến trang chính">Blog...</a>
+                  </div>
+                </div>
+                
+                <div class="menu-user">
+                  <a href="#" aria-label="Điều hướng đến trang chính">Sale</a>
+                  <a href="#" aria-label="Điều hướng đến trang chính">Buy Umino!</a>
+                  <a href="#" aria-label="Điều hướng đến trang chính"><i class="fa-regular fa-clock" style="padding-right: 8px;"></i></i>Recently Viewed</a>
+                  <a href="#" aria-label="Điều hướng đến trang chính"><i class="fa-regular fa-heart" style="padding-right: 8px;"></i></i>Wishlist</a>
+                  <a href="#" aria-label="Điều hướng đến trang chính"><i class="fa-regular fa-user" style="padding-right: 8px;"></i>Login / Register</a>
+                </div>
+                
+                <div class="language">
+                  Language
+                  <div>
+                    <a href="#" aria-label="Điều hướng đến trang chính" style="text-decoration: underline;">English</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">VietNam</a>
+                    <a href="#" aria-label="Điều hướng đến trang chính">English</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -200,34 +242,34 @@
       <div class="mySlides fade">
         <img src="uploads/slider/slide.webp" alt="">
         <div class="text">
-          <h1>
+          <h1 class="text-lines">
             Stylish <br>
             Top Trending
           </h1>
-          <p>So soft you don't want to take it off.</p>
-          <button>Explore Now</button>
+          <p class="text-lines">So soft you don't want to take it off.</p>
+          <button class="text-lines">Explore Now</button>
         </div>
       </div>
       <div class="mySlides fade">
         <img src="uploads/slider/slide.webp" alt="">
         <div class="text">
-          <h1>
+          <h1 class="text-lines">
             Stylish <br>
             Top Trending
           </h1>
-          <p>So soft you don't want to take it off.</p>
-          <button>Explore Now</button>
+          <p class="text-lines">So soft you don't want to take it off.</p>
+          <button class="text-lines">Explore Now</button>
         </div>
       </div>
       <div class="mySlides fade">
         <img src="uploads/slider/slide.webp" alt="">
         <div class="text">
-          <h1>
+          <h1 class="text-lines">
             Stylish <br>
             Top Trending
           </h1>
-          <p>So soft you don't want to take it off.</p>
-          <button>Explore Now</button>
+          <p class="text-lines">So soft you don't want to take it off.</p>
+          <button class="text-lines">Explore Now</button>
         </div>
       </div>
       <div class="prev" onclick="plusSlides(-1)"
@@ -665,7 +707,9 @@
           </div>
         </div>
         <div class="footer-categories">
-          <h1>Hot Categories</h1>
+          <div>
+            <h1>Hot Categories</h1>
+          </div>
           <div class="footer-categories-list">
             <a href="#" aria-label="Điều hướng đến trang chính">Special Offers</a>
             <a href="#" aria-label="Điều hướng đến trang chính">Performance</a>

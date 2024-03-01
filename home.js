@@ -9,34 +9,28 @@ document.getElementById('search-icon').addEventListener('click', function() {
 
 function toggleMenu() {
   var menu = document.getElementById("menu");
-  if (menu.style.display === "none") {
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }
+  menu.classList.toggle("menu-mb-active");
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  const buttons = document.querySelectorAll(".menu-mb button");
-  buttons.forEach(button => {
-    button.addEventListener("click", function() {
-      const isActive = this.parentElement.classList.contains("menu-active");
-      buttons.forEach(btn => {
-        btn.parentElement.classList.remove("menu-active");
-        btn.querySelector('.fa-angle-up').style.display = "none";
-        btn.querySelector('.fa-angle-down').style.display = "inline-block";
-        btn.nextElementSibling.style.display = "none";
-      });
-      
-      if (!isActive) {
-        this.parentElement.classList.add("menu-active");
-        this.querySelector('.fa-angle-down').style.display = "none";
-        this.querySelector('.fa-angle-up').style.display = "inline-block";
-        this.nextElementSibling.style.display = "flex";
-      }
-    });
-  });
-});
+function subMenu(clickedElement) {
+  const parentElement = clickedElement.parentElement;
+  const isActive = parentElement.classList.contains("menu-active");
+  const menuList = parentElement.querySelector(".menu-mb-list");
+  const buttons = document.getElementsByClassName("menu-mb-content-list");
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].parentElement.classList.remove("menu-active");
+    const nextMenuList = buttons[i].nextElementSibling;
+    if (nextMenuList) {
+      nextMenuList.style.left = "-100%";
+    }
+  }
+  if (!isActive) {
+    parentElement.classList.add("menu-active");
+    if (menuList) {
+      menuList.style.left = "0";
+    }
+  }
+}
 
 window.addEventListener('scroll', function() {
   var headerMenu = document.getElementById('header-menu');
@@ -72,6 +66,30 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+var touchstartX = 0;
+var touchendX = 0;
+
+const slider = document.querySelector('.slideshow-container');
+
+slider.addEventListener('touchstart', function(event) {
+  touchstartX = event.changedTouches[0].screenX;
+}, false);
+
+slider.addEventListener('touchend', function(event) {
+  touchendX = event.changedTouches[0].screenX;
+  handleGesture();
+}, false); 
+
+function handleGesture() {
+  if (touchendX < touchstartX) {
+    plusSlides(1); // Vuốt sang phải để chuyển slide tiếp theo
+  }
+  
+  if (touchendX > touchstartX) {
+    plusSlides(-1); // Vuốt sang trái để chuyển slide trước đó
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
