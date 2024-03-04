@@ -6,7 +6,7 @@
 <meta name=description content=Umino...>
 <title>Umino</title>
 <link rel=stylesheet href=style.css>
-<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel=stylesheet>
+<link rel=preload href="https://fonts.googleapis.com/css2?family=Jost&display=swap" as=style>
 <script src=https://kit.fontawesome.com/5ce6811c48.js crossorigin=anonymous></script>
 </head>
 <body>
@@ -44,7 +44,7 @@ United States (USD $)
 <div id=header-menu>
 <div class=navbar>
 <div class=logo>
-<a href=# aria-label="Điều hướng đến trang chính"><img src=uploads/Logo.WebP alt="" style=width:92px;height:auto;object-fit:cover></a>
+<a href=# aria-label="Điều hướng đến trang chính"><img loading=lazy src=uploads/Logo.WebP alt="" style=width:92px;height:auto;object-fit:cover></a>
 </div>
 <div class=menu>
 <div class=dropdown>
@@ -229,7 +229,7 @@ Language
 </header>
 <div class=slideshow-container>
 <div class="mySlides fade">
-<img src=uploads/slider/slide.webp alt="">
+<img loading=lazy priority=high src=uploads/slider/slide.webp alt="">
 <div class=text>
 <h1 class=text-lines>
 Stylish <br>
@@ -240,7 +240,7 @@ Top Trending
 </div>
 </div>
 <div class="mySlides fade">
-<img src=uploads/slider/slide.webp alt="">
+<img loading=lazy src=uploads/slider/slide.webp alt="">
 <div class=text>
 <h1 class=text-lines>
 Stylish <br>
@@ -251,7 +251,7 @@ Top Trending
 </div>
 </div>
 <div class="mySlides fade">
-<img src=uploads/slider/slide.webp alt="">
+<img loading=lazy src=uploads/slider/slide.webp alt="">
 <div class=text>
 <h1 class=text-lines>
 Stylish <br>
@@ -271,7 +271,7 @@ Top Trending
 </div>
 <div class=categories>
 <div class=categories-left>
-<img src=uploads/categories/bg1.WebP alt="">
+<img loading=lazy priority=high src=uploads/categories/bg1.WebP alt="">
 <div>
 <div class=href>
 <a href=# aria-label="Điều hướng đến trang">Tops</a>
@@ -280,7 +280,7 @@ Top Trending
 </div>
 <div class=categories-center>
 <div class=categories-center-top>
-<img src=uploads/categories/bg2.WebP alt="">
+<img loading=lazy priority=high src=uploads/categories/bg2.WebP alt="">
 <div>
 <div class=href>
 <a href=# aria-label="Điều hướng đến trang">Sunglasses</a>
@@ -289,7 +289,7 @@ Top Trending
 </div>
 <div style=display:flex>
 <div class=categories-center-bottom-left>
-<img src=uploads/categories/bg3.WebP alt="">
+<img loading=lazy priority=high src=uploads/categories/bg3.WebP alt="">
 <div>
 <div class=href>
 <a href=# aria-label="Điều hướng đến trang">Sandals</a>
@@ -297,7 +297,7 @@ Top Trending
 </div>
 </div>
 <div class=categories-center-bottom-right>
-<img src=uploads/categories/bg4.WebP alt="">
+<img loading=lazy priority=high src=uploads/categories/bg4.WebP alt="">
 <div>
 <div class=href>
 <a href=# aria-label="Điều hướng đến trang">Bags</a>
@@ -307,7 +307,7 @@ Top Trending
 </div>
 </div>
 <div class=categories-right>
-<img src=uploads/categories/bg5.WebP alt="">
+<img loading=lazy src=uploads/categories/bg5.WebP alt="">
 <div>
 <div class=href>
 <a href=# aria-label="Điều hướng đến trang">Sneaker</a>
@@ -326,9 +326,9 @@ Here’s some of our most popular products people are in love with.
 <div class=top-trending-products>
 <div class=products>
 <div class=products-img>
-<img src=uploads/products/img.WebP class=image alt="">
-<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
-<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/img.WebP class=image alt="">
+<img loading=lazy src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg7.WebP class=image alt="" style=display:none>
 <div class=sale>
 </div>
 <div class=add-cart>
@@ -336,7 +336,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=btn-heart>
 <button aria-label="Thêm vào danh sách yêu thích"><i class="fa-regular fa-heart"></i></button>
-<button aria-label="Xem"><i class="fa-regular fa-eye"></i></button>
+<button aria-label=Xem><i class="fa-regular fa-eye"></i></button>
 </div>
 </div>
 <div class=products-title>
@@ -359,9 +359,9 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=products>
 <div class=products-img>
-<img src=uploads/products/bg7.WebP class=image alt="">
-<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
-<img src=uploads/products/img.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg7.WebP class=image alt="">
+<img loading=lazy src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/img.WebP class=image alt="" style=display:none>
 <div class=sale>
 <div>-10%</div>
 <div>Pre-Order</div>
@@ -371,7 +371,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=btn-heart>
 <button aria-label="Thêm vào danh sách yêu thích"><i class="fa-regular fa-heart"></i></button>
-<button aria-label="Xem"><i class="fa-regular fa-eye"></i></button>
+<button aria-label=Xem><i class="fa-regular fa-eye"></i></button>
 </div>
 </div>
 <div class=products-title>
@@ -397,9 +397,9 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=products>
 <div class=products-img>
-<img src=uploads/products/bg6.WebP class=image alt="">
-<img src=uploads/products/img.WebP class=image alt="" style=display:none>
-<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg6.WebP class=image alt="">
+<img loading=lazy src=uploads/products/img.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg7.WebP class=image alt="" style=display:none>
 <div class=sale>
 </div>
 <div class=add-cart>
@@ -407,7 +407,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=btn-heart>
 <button aria-label="Thêm vào danh sách yêu thích"><i class="fa-regular fa-heart"></i></button>
-<button aria-label="Xem"><i class="fa-regular fa-eye"></i></button>
+<button aria-label=Xem><i class="fa-regular fa-eye"></i></button>
 </div>
 </div>
 <div class=products-title>
@@ -430,9 +430,9 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=products>
 <div class=products-img>
-<img src=uploads/products/bg8.WebP class=image alt="">
-<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
-<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg8.WebP class=image alt="">
+<img loading=lazy src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg7.WebP class=image alt="" style=display:none>
 <div class=sale>
 </div>
 <div class=add-cart>
@@ -440,7 +440,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=btn-heart>
 <button aria-label="Thêm vào danh sách yêu thích"><i class="fa-regular fa-heart"></i></button>
-<button aria-label="Xem"><i class="fa-regular fa-eye"></i></button>
+<button aria-label=Xem><i class="fa-regular fa-eye"></i></button>
 </div>
 </div>
 <div class=products-title>
@@ -466,7 +466,7 @@ Here’s some of our most popular products people are in love with.
 <div class=banner>
 <div class=banner-left>
 <div>
-<img class=banner-img src=uploads/banner/bg9.WebP alt="">
+<img loading=lazy class=banner-img src=uploads/banner/bg9.WebP alt="">
 </div>
 <p>Set Nightwear</p>
 <p>Explore the Lookbook</p>
@@ -474,7 +474,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=banner-center>
 <div>
-<img class=banner-img src=uploads/banner/bg10.WebP alt="">
+<img loading=lazy class=banner-img src=uploads/banner/bg10.WebP alt="">
 </div>
 <p>Handbag Style</p>
 <p>Explore the Lookbook</p>
@@ -482,7 +482,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=banner-right>
 <div>
-<img class=banner-img src=uploads/banner/bg11.WebP alt="">
+<img loading=lazy class=banner-img src=uploads/banner/bg11.WebP alt="">
 </div>
 <p>Made for Your</p>
 <p>Explore the Lookbook</p>
@@ -499,9 +499,9 @@ Here’s some of our most popular products people are in love with.
 <div class=top-trending-products>
 <div class=products>
 <div class=products-img>
-<img src=uploads/products/bg12.WebP class=image alt="">
-<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
-<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg12.WebP class=image alt="">
+<img loading=lazy src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg7.WebP class=image alt="" style=display:none>
 <div class=sale>
 <div></div>
 <div></div>
@@ -512,7 +512,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=btn-heart>
 <button aria-label="Thêm vào danh sách yêu thích"><i class="fa-regular fa-heart"></i></button>
-<button aria-label="Xem"><i class="fa-regular fa-eye"></i></button>
+<button aria-label=Xem><i class="fa-regular fa-eye"></i></button>
 </div>
 </div>
 <div class=products-title>
@@ -535,9 +535,9 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=products>
 <div class=products-img>
-<img src=uploads/products/bg13.WebP class=image alt="">
-<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
-<img src=uploads/products/img.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg13.WebP class=image alt="">
+<img loading=lazy src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/img.WebP class=image alt="" style=display:none>
 <div class=sale>
 </div>
 <div class=add-cart>
@@ -545,7 +545,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=btn-heart>
 <button aria-label="Thêm vào danh sách yêu thích"><i class="fa-regular fa-heart"></i></button>
-<button aria-label="Xem"><i class="fa-regular fa-eye"></i></button>
+<button aria-label=Xem><i class="fa-regular fa-eye"></i></button>
 </div>
 </div>
 <div class=products-title>
@@ -571,9 +571,9 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=products>
 <div class=products-img>
-<img src=uploads/products/bg14.WebP class=image alt="">
-<img src=uploads/products/img.WebP class=image alt="" style=display:none>
-<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg14.WebP class=image alt="">
+<img loading=lazy src=uploads/products/img.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg7.WebP class=image alt="" style=display:none>
 <div class=sale>
 <div>-10%</div>
 <div>Pre-Order</div>
@@ -583,7 +583,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=btn-heart>
 <button aria-label="Thêm vào danh sách yêu thích"><i class="fa-regular fa-heart"></i></button>
-<button aria-label="Xem"><i class="fa-regular fa-eye"></i></button>
+<button aria-label=Xem><i class="fa-regular fa-eye"></i></button>
 </div>
 </div>
 <div class=products-title>
@@ -606,9 +606,9 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=products>
 <div class=products-img>
-<img src=uploads/products/bg15.WebP class=image alt="">
-<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
-<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg15.WebP class=image alt="">
+<img loading=lazy src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img loading=lazy src=uploads/products/bg7.WebP class=image alt="" style=display:none>
 <div class=sale>
 </div>
 <div class=add-cart>
@@ -616,7 +616,7 @@ Here’s some of our most popular products people are in love with.
 </div>
 <div class=btn-heart>
 <button aria-label="Thêm vào danh sách yêu thích"><i class="fa-regular fa-heart"></i></button>
-<button aria-label="Xem"><i class="fa-regular fa-eye"></i></button>
+<button aria-label=Xem><i class="fa-regular fa-eye"></i></button>
 </div>
 </div>
 <div class=products-title>
@@ -649,39 +649,39 @@ Inspire and let yourself be inspired, from one unique fashion to another.
 </div>
 <div class=shop-instagram-products>
 <div class=instagram-product>
-<img src=uploads/products/bg16.WebP alt="">
+<img loading=lazy src=uploads/products/bg16.WebP alt="">
 <div>
-<img src=uploads/icon.WebP alt="">
+<img loading=lazy src=uploads/icon.WebP alt="">
 </div>
 </div>
 <div class=instagram-product>
-<img src=uploads/products/bg21.WebP alt="">
+<img loading=lazy src=uploads/products/bg21.WebP alt="">
 <div>
-<img src=uploads/icon.WebP alt="">
+<img loading=lazy src=uploads/icon.WebP alt="">
 </div>
 </div>
 <div class=instagram-product>
-<img src=uploads/products/bg17.WebP alt="">
+<img loading=lazy src=uploads/products/bg17.WebP alt="">
 <div>
-<img src=uploads/icon.WebP alt="">
+<img loading=lazy src=uploads/icon.WebP alt="">
 </div>
 </div>
 <div class=instagram-product>
-<img src=uploads/products/bg18.WebP alt="">
+<img loading=lazy src=uploads/products/bg18.WebP alt="">
 <div>
-<img src=uploads/icon.WebP alt="">
+<img loading=lazy src=uploads/icon.WebP alt="">
 </div>
 </div>
 <div class=instagram-product>
-<img src=uploads/products/bg19.WebP alt="">
+<img loading=lazy src=uploads/products/bg19.WebP alt="">
 <div>
-<img src=uploads/icon.WebP alt="">
+<img loading=lazy src=uploads/icon.WebP alt="">
 </div>
 </div>
 <div class=instagram-product>
-<img src=uploads/products/bg20.WebP alt="">
+<img loading=lazy src=uploads/products/bg20.WebP alt="">
 <div>
-<img src=uploads/icon.WebP alt="">
+<img loading=lazy src=uploads/icon.WebP alt="">
 </div>
 </div>
 </div>
@@ -691,19 +691,19 @@ Inspire and let yourself be inspired, from one unique fashion to another.
 <div>
 <div class=footer-logo>
 <div class=logo>
-<a href=# aria-label="Điều hướng đến trang chính"><img src=uploads/Logo.WebP alt="" style=width:92px;height:auto;object-fit:cover></a>
+<a href=# aria-label="Điều hướng đến trang chính"><img loading=lazy src=uploads/Logo.WebP alt="" style=width:92px;height:auto;object-fit:cover></a>
 </div>
 <p>268 St, South New York/NY 98944, United States</p>
 <p>+222-1800-2628</p>
 <p class=last>blueskytechcompany@gmail.com</p>
 <div class=footer-logo-icon>
-<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon1.WebP alt=""></a>
-<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon2.WebP alt=""></a>
-<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon3.WebP alt=""></a>
-<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon4.WebP alt=""></a>
-<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon5.WebP alt=""></a>
-<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon6.WebP alt=""></a>
-<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon7.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img loading=lazy src=uploads/footer/icon1.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img loading=lazy src=uploads/footer/icon2.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img loading=lazy src=uploads/footer/icon3.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img loading=lazy src=uploads/footer/icon4.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img loading=lazy src=uploads/footer/icon5.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img loading=lazy src=uploads/footer/icon6.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img loading=lazy src=uploads/footer/icon7.WebP alt=""></a>
 </div>
 </div>
 <div class=footer-categories>
@@ -768,13 +768,13 @@ United States (USD $)
 <p>© 2022 Umino Store. All Rights Reserved.</p>
 </div>
 <div class=payment>
-<div><img src=uploads/footer/bg22.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
-<div><img src=uploads/footer/bg23.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
-<div><img src=uploads/footer/bg24.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
-<div><img src=uploads/footer/bg25.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
-<div><img src=uploads/footer/bg26.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
-<div><img src=uploads/footer/bg27.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
-<div><img src=uploads/footer/bg28.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img loading=lazy src=uploads/footer/bg22.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img loading=lazy src=uploads/footer/bg23.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img loading=lazy src=uploads/footer/bg24.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img loading=lazy src=uploads/footer/bg25.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img loading=lazy src=uploads/footer/bg26.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img loading=lazy src=uploads/footer/bg27.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img loading=lazy src=uploads/footer/bg28.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
 </div>
 </div>
 </footer>
