@@ -1,785 +1,783 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Umino...">
-    <title>Umino</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5ce6811c48.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
-      <div class="top-header">
-        <div class="top-header-left">
-          <span>+222-1800-2628</span>
-          <span>blueskytechcompany@gmail.com</span>
-        </div>
-        <div class="top-header-center">
-          Sign up for 10% off your first order: <a href="#" aria-label="Điều hướng đến trang sign up">Sign Up</a>
-        </div>
-        <div class="top-header-right">
-          <div>Our Stores</div>
-          <div class="dropdown">
-            <button class="dropbtn">
-              English
-              <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <div>VN</div>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">
-              United States (USD $)
-              <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <div>VNĐ</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="" id="header-menu">
-        <div class="navbar">
-          <div class="logo">
-            <a href="#" aria-label="Điều hướng đến trang chính"><img src="uploads/Logo.WebP" alt="" style="width: 92px; height: auto; object-fit: cover;"></a>
-          </div>
-
-          <div class="menu">
-            <div class="dropdown">
-              <button class="dropbtn">
-                Home
-                <i class=" fa-solid fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#" aria-label="Điều hướng đến trang chính">Home 1</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Home 2</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Home 3</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">
-                Shop
-                <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#" aria-label="Điều hướng đến trang chính">Shop 1</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Shop 2</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Shop 3</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">
-                Product
-                <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#" aria-label="Điều hướng đến trang chính">Shirt</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Trousers</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Shoe</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Hat</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">
-                Page
-                <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#" aria-label="Điều hướng đến trang chính">Page 1</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Page 2</a>
-                <a href="#" aria-label="Điều hướng đến trang chính">Page 3</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">
-                Blog
-                <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#" aria-label="Điều hướng đến trang chính">Blog...</a>
-              </div>
-            </div>
-            <div>
-              <a href="#" aria-label="Điều hướng đến trang chính">Sale</a>
-              <a href="#" aria-label="Điều hướng đến trang chính">Buy Umino!</a>
-            </div>
-          </div>
-          <div class="icon" onclick="toggleMenu()">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="menu-mb" id="menu">
-            <div>
-              <div class="menu-mb-title">
-                <div>MENU</div>
-                <div onclick="toggleMenu()"><i class="icon-x"></i></div>
-              </div>
-              <div class="menu-mb-content">
-                
-                <div class="">
-                  <div class="menu-mb-content-list" onclick="subMenu(this)">
-                    Home
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </div>
-                  <div class="menu-mb-list">
-                    <div class="submenu-mb-title">
-                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
-                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
-                    </div>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Home 1</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Home 2</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Home 3</a>
-                  </div>
-                </div>
-                
-                <div class="">
-                  <div class="menu-mb-content-list" onclick="subMenu(this)">
-                    Shop
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </div>
-                  <div class="menu-mb-list">
-                    <div class="submenu-mb-title">
-                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
-                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
-                    </div>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Shop 1</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Shop 2</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Shop 3</a>
-                  </div>
-                </div>
-              
-                <div class="">
-                  <div class="menu-mb-content-list" onclick="subMenu(this)">
-                    Product
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </div>
-                  <div class="menu-mb-list">
-                    <div class="submenu-mb-title">
-                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
-                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
-                    </div>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Shirt</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Trousers</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Shoe</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Hat</a>
-                  </div>
-                </div>
-                
-                
-                <div class="">
-                  <div class="menu-mb-content-list" onclick="subMenu(this)">
-                    Page
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </div>
-                  <div class="menu-mb-list">
-                    <div class="submenu-mb-title">
-                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
-                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
-                    </div>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Page 1</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Page 2</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Page 3</a>
-                  </div>
-                </div>
-                
-                <div class="">
-                  <div class="menu-mb-content-list" onclick="subMenu(this)">
-                    Blog
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </div>
-                  <div class="menu-mb-list">
-                    <div class="submenu-mb-title">
-                      <div onclick="subMenu(this)" class="close-menu"><i class="fa-solid fa-chevron-left" style="padding-right: 8px;"></i>MENU</div>
-                      <div onclick="toggleMenu()"><i class="icon-x"></i></div>
-                    </div>
-                    <a href="#" aria-label="Điều hướng đến trang chính">Blog...</a>
-                  </div>
-                </div>
-                
-                <div class="menu-user">
-                  <a href="#" aria-label="Điều hướng đến trang chính">Sale</a>
-                  <a href="#" aria-label="Điều hướng đến trang chính">Buy Umino!</a>
-                  <a href="#" aria-label="Điều hướng đến trang chính"><i class="fa-regular fa-clock" style="padding-right: 8px;"></i>Recently Viewed</a>
-                  <a href="#" aria-label="Điều hướng đến trang chính"><i class="fa-regular fa-heart" style="padding-right: 8px;"></i>Wishlist</a>
-                  <a href="#" aria-label="Điều hướng đến trang chính"><i class="fa-regular fa-user" style="padding-right: 8px;"></i>Login / Register</a>
-                </div>
-                
-                <div class="language">
-                  Language
-                  <div>
-                    <a href="#" aria-label="Điều hướng đến trang chính" style="text-decoration: underline;">English</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">VietNam</a>
-                    <a href="#" aria-label="Điều hướng đến trang chính">English</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="navbar-right">
-            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-            <input type="text" id="search-input" placeholder="search...">
-            <div class="mobile">
-              <i class="fa-regular fa-user"></i>
-              <i class="fa-regular fa-clock"></i>
-            </div>
-            <div class="mobile" style="position: relative">
-              <i class="fa-regular fa-heart"></i>
-              <span class="badge">2</span>
-            </div>
-            <div style="position: relative">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span class="badge">4</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="uploads/slider/slide.webp" alt="">
-        <div class="text">
-          <h1 class="text-lines">
-            Stylish <br>
-            Top Trending
-          </h1>
-          <p class="text-lines">So soft you don't want to take it off.</p>
-          <button class="text-lines">Explore Now</button>
-        </div>
-      </div>
-      <div class="mySlides fade">
-        <img src="uploads/slider/slide.webp" alt="">
-        <div class="text">
-          <h1 class="text-lines">
-            Stylish <br>
-            Top Trending
-          </h1>
-          <p class="text-lines">So soft you don't want to take it off.</p>
-          <button class="text-lines">Explore Now</button>
-        </div>
-      </div>
-      <div class="mySlides fade">
-        <img src="uploads/slider/slide.webp" alt="">
-        <div class="text">
-          <h1 class="text-lines">
-            Stylish <br>
-            Top Trending
-          </h1>
-          <p class="text-lines">So soft you don't want to take it off.</p>
-          <button class="text-lines">Explore Now</button>
-        </div>
-      </div>
-      <div class="prev" onclick="plusSlides(-1)"
-        ><i class="fa-solid fa-angle-left"></i
-      ></div>
-      <div class="next" onclick="plusSlides(1)"
-        ><i class="fa-solid fa-angle-right"></i
-      ></div>
-
-      <div class="dot-icon">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-    </div>
-
-    <div class="categories">
-      <div class="categories-left">
-        <img src="uploads/categories/bg1.WebP" alt="">
-        <div>
-          <div class="href">
-            <a href="#" aria-label="Điều hướng đến trang">Tops</a>
-          </div>
-        </div>
-      </div>
-      <div class="categories-center">
-        <div class="categories-center-top">
-          <img src="uploads/categories/bg2.WebP" alt="">
-          <div>
-            <div class="href">
-              <a href="#" aria-label="Điều hướng đến trang">Sunglasses</a>
-            </div>
-          </div>
-        </div>
-        <div style="display: flex">
-          <div class="categories-center-bottom-left">
-            <img src="uploads/categories/bg3.WebP" alt="">
-            <div>
-              <div class="href">
-                <a href="#" aria-label="Điều hướng đến trang">Sandals</a>
-              </div>
-            </div>
-          </div>
-          <div class="categories-center-bottom-right">
-            <img src="uploads/categories/bg4.WebP" alt="">
-            <div>
-              <div class="href">
-                <a href="#" aria-label="Điều hướng đến trang">Bags</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="categories-right">
-        <img src="uploads/categories/bg5.WebP" alt="">
-        <div>
-          <div class="href">
-            <a href="#" aria-label="Điều hướng đến trang">Sneaker</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="top-trending">
-        <div class="top-trending-title">
-          <h1>Top Trending</h1>
-          <p>
-            Here’s some of our most popular products people are in love with.
-          </p>
-        </div>
-        <div class="top-trending-products">
-          <div class="products">
-            <div class="products-img">
-              <img src="uploads/products/img.WebP" class="image" alt="">
-              <img src="uploads/products/bg6.WebP" class="image" alt="" style="display: none">
-              <img src="uploads/products/bg7.WebP" class="image" alt="" style="display: none">
-              <div class="sale">
-              </div>
-              <div class="middle">
-                <i class="fa-solid fa-cart-plus"></i>
-              </div>
-            </div>
-            <div class="products-title">
-              <p>Square Textured Striped</p>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-              <br>
-              <span> $<span>150.00</span> </span>
-              <div style="display: flex">
-                <div class="color-bark focus" data-img-index="0">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="1">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="2">
-                  <div class="color"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="products-img">
-              <img src="uploads/products/bg7.WebP" class="image" alt="">
-              <img src="uploads/products/bg6.WebP" class="image" alt="" style="display: none">
-              <img src="uploads/products/img.WebP" class="image" alt="" style="display: none">
-              <div class="sale">
-                <div>-10%</div>
-                <div>Pre-Order</div>
-              </div>
-              <div class="middle">
-                <i class="fa-solid fa-cart-plus"></i>
-              </div>
-            </div>
-            <div class="products-title">
-              <p>Square Textured Striped</p>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-              <br>
-              <span>
-                <span style="color: #d73f0f">$<span>150.00</span></span>
-                <span style="color: #555555; text-decoration: line-through 1.5px">$<span>490.00</span></span>
-              </span>
-              <div style="display: flex">
-                <div class="color-bark focus" data-img-index="0">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="1">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="2">
-                  <div class="color"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="products-img">
-              <img src="uploads/products/bg6.WebP" class="image" alt="">
-              <img src="uploads/products/img.WebP" class="image" alt="" style="display: none">
-              <img src="uploads/products/bg7.WebP" class="image" alt="" style="display: none">
-              <div class="sale">
-              </div>
-              <div class="middle">
-                <i class="fa-solid fa-cart-plus"></i>
-              </div>
-            </div>
-            <div class="products-title">
-              <p>Square Textured Striped</p>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-              <br>
-              <span> $<span>150.00</span> </span>
-              <div style="display: flex">
-                <div class="color-bark focus" data-img-index="0">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="1">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="2">
-                  <div class="color"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="products-img">
-              <img src="uploads/products/bg8.WebP" class="image" alt="">
-              <img src="uploads/products/bg6.WebP" class="image" alt="" style="display: none">
-              <img src="uploads/products/bg7.WebP" class="image" alt="" style="display: none">
-              <div class="sale">
-              </div>
-              <div class="middle">
-                <i class="fa-solid fa-cart-plus"></i>
-              </div>
-            </div>
-            <div class="products-title">
-              <p>Square Textured Striped</p>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-              <br>
-              <span> $<span>145.00</span> - $<span>169.00</span> </span>
-              <div style="display: flex">
-                <div class="color-bark focus" data-img-index="0">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="1">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="2">
-                  <div class="color"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="banner">
-        <div class="banner-left">
-          <img class="banner-img" src="uploads/banner/bg9.WebP" alt="">
-          <p>Set Nightwear</p>
-          <p>Explore the Lookbook</p>
-          <div class="banner-left-line"></div>
-        </div>
-        <div class="banner-center">
-          <img class="banner-img" src="uploads/banner/bg10.WebP" alt="">
-          <p>Handbag Style</p>
-          <p>Explore the Lookbook</p>
-          <div class="banner-center-line"></div>
-        </div>
-        <div class="banner-right">
-          <img class="banner-img" src="uploads/banner/bg11.WebP" alt="">
-          <p>Made for Your</p>
-          <p>Explore the Lookbook</p>
-          <div class="banner-right-line"></div>
-        </div>
-      </div>
-
-      <div class="you-must-have">
-        <div class="top-trending-title">
-          <h1>You Must Have</h1>
-          <p>
-            Here’s some of our most popular products people are in love with.
-          </p>
-        </div>
-        <div class="top-trending-products">
-          <div class="products">
-            <div class="products-img">
-              <img src="uploads/products/bg12.WebP" class="image" alt="">
-              <img src="uploads/products/bg6.WebP" class="image" alt="" style="display: none">
-              <img src="uploads/products/bg7.WebP" class="image" alt="" style="display: none">
-              <div class="sale">
-                <div></div>
-                <div></div>
-                <div>Sold Out</div>
-              </div>
-              <div class="middle">
-                <i class="fa-solid fa-cart-plus"></i>
-              </div>
-            </div>
-            <div class="products-title">
-              <p>Square Textured Striped</p>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-              <br>
-              <span> $<span>150.00</span> </span>
-              <div style="display: flex">
-                <div class="color-bark focus" data-img-index="0">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="1">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="2">
-                  <div class="color"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="products-img">
-              <img src="uploads/products/bg13.WebP" class="image" alt="">
-              <img src="uploads/products/bg6.WebP" class="image" alt="" style="display: none">
-              <img src="uploads/products/img.WebP" class="image" alt="" style="display: none">
-              <div class="sale">
-              </div>
-              <div class="middle">
-                <i class="fa-solid fa-cart-plus"></i>
-              </div>
-            </div>
-            <div class="products-title">
-              <p>Square Textured Striped</p>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-              <br>
-              <span>
-                <span style="color: #d73f0f">$<span>150.00</span></span>
-                <span style="color: #555555; text-decoration: line-through 1.5px">$<span>490.00</span></span>
-              </span>
-              <div style="display: flex">
-                <div class="color-bark focus" data-img-index="0">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="1">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="2">
-                  <div class="color"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="products-img">
-              <img src="uploads/products/bg14.WebP" class="image" alt="">
-              <img src="uploads/products/img.WebP" class="image" alt="" style="display: none">
-              <img src="uploads/products/bg7.WebP" class="image" alt="" style="display: none">
-              <div class="sale">
-                <div>-10%</div>
-                <div>Pre-Order</div>
-              </div>
-              <div class="middle">
-                <i class="fa-solid fa-cart-plus"></i>
-              </div>
-            </div>
-            <div class="products-title">
-              <p>Square Textured Striped</p>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-              <br>
-              <span> $<span>150.00</span> </span>
-              <div style="display: flex">
-                <div class="color-bark focus" data-img-index="0">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="1">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="2">
-                  <div class="color"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="products-img">
-              <img src="uploads/products/bg15.WebP" class="image" alt="">
-              <img src="uploads/products/bg6.WebP" class="image" alt="" style="display: none">
-              <img src="uploads/products/bg7.WebP" class="image" alt="" style="display: none">
-              <div class="sale">
-              </div>
-              <div class="middle">
-                <i class="fa-solid fa-cart-plus"></i>
-              </div>
-            </div>
-            <div class="products-title">
-              <p>Square Textured Striped</p>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-              <br>
-              <span> $<span>145.00</span> - $<span>169.00</span> </span>
-              <div style="display: flex">
-                <div class="color-bark focus" data-img-index="0">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="1">
-                  <div class="color"></div>
-                </div>
-                <div class="color-bark" data-img-index="2">
-                  <div class="color"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr class="hr-desktop hr-mb">
-      <div class="shop-instagram">
-        <div class="top-trending-title">
-          <h1>Shop by Gram</h1>
-          <p>
-            Inspire and let yourself be inspired, from one unique fashion to
-            another.
-          </p>
-        </div>
-        <div class="shop-instagram-products">
-          <div class="instagram-product">
-            <img src="uploads/products/bg16.WebP" alt="">
-            <div>
-              <img src="uploads/icon.WebP" alt="">
-            </div>
-          </div>
-          <div class="instagram-product">
-            <img src="uploads/products/bg21.WebP" alt="">
-            <div>
-              <img src="uploads/icon.WebP" alt="">
-            </div>
-          </div>
-          <div class="instagram-product">
-            <img src="uploads/products/bg17.WebP" alt="">
-            <div>
-              <img src="uploads/icon.WebP" alt="">
-            </div>
-          </div>
-          <div class="instagram-product">
-            <img src="uploads/products/bg18.WebP" alt="">
-            <div>
-              <img src="uploads/icon.WebP" alt="">
-            </div>
-          </div>
-          <div class="instagram-product">
-            <img src="uploads/products/bg19.WebP" alt="">
-            <div>
-              <img src="uploads/icon.WebP" alt="">
-            </div>
-          </div>
-          <div class="instagram-product">
-            <img src="uploads/products/bg20.WebP" alt="">
-            <div>
-              <img src="uploads/icon.WebP" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <div>
-        <div class="footer-logo">
-          <div class="logo">
-            <a href="#" aria-label="Điều hướng đến trang chính"><img src="uploads/Logo.WebP" alt="" style="width: 92px; height: auto; object-fit: cover;"></a>
-          </div>
-          <p>268 St, South New York/NY 98944, United States</p>
-          <p>+222-1800-2628</p>
-          <p class="last">blueskytechcompany@gmail.com</p>
-          <div class="footer-logo-icon">
-            <a href="#" aria-label="Điều hướng đến trang"><img src="uploads/footer/icon1.WebP" alt=""></a>
-            <a href="#" aria-label="Điều hướng đến trang"><img src="uploads/footer/icon2.WebP" alt=""></a>
-            <a href="#" aria-label="Điều hướng đến trang"><img src="uploads/footer/icon3.WebP" alt=""></a>
-            <a href="#" aria-label="Điều hướng đến trang"><img src="uploads/footer/icon4.WebP" alt=""></a>
-            <a href="#" aria-label="Điều hướng đến trang"><img src="uploads/footer/icon5.WebP" alt=""></a>
-            <a href="#" aria-label="Điều hướng đến trang"><img src="uploads/footer/icon6.WebP" alt=""></a>
-            <a href="#" aria-label="Điều hướng đến trang"><img src="uploads/footer/icon7.WebP" alt=""></a>
-          </div>
-        </div>
-        <div class="footer-categories">
-          <div>
-            <h1>Hot Categories</h1>
-          </div>
-          <div class="footer-categories-list">
-            <a href="#" aria-label="Điều hướng đến trang chính">Special Offers</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Performance</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">T-shirts</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Underwear</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Top Brands</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Online Exclusive</a>
-          </div>
-        </div>
-        <div class="footer-service">
-          <h1>Customer Service</h1>
-          <div class="footer-categories-list">
-            <a href="#" aria-label="Điều hướng đến trang chính">Privacy Policy</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Refund Policy</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Shipping & Return</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Term & Conditions</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Advanced Search</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Theme FAQs</a>
-            <a href="#" aria-label="Điều hướng đến trang chính">Store Locations</a>
-          </div>
-        </div>
-        <div class="footer-email">
-          <h1>Sign Up to Newsletter</h1>
-          <p>
-            Enter your email address to get $10 off your first order and free
-            shipping. Updates information on Sales and Offers.
-          </p>
-          <form action="#" method="post">
-            <input type="text" name="email" id="email" placeholder="Enter your email...">
-            <button>Subscribe</button>
-          </form>
-        </div>
-      </div>
-      <hr class="hr-footer hr-mb">
-      <div class="footer-bottom">
-        <div class="footer-bottom-left">
-          <div class="dropdown">
-            <button class="dropbtn" style="color: #555555;">
-              English
-              <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <div>VN</div>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn" style="color: #555555;">
-              United States (USD $)
-              <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <div>VNĐ</div>
-            </div>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>© 2022 Umino Store. All Rights Reserved.</p>
-        </div>
-        <div class="payment">
-          <div><img src="uploads/footer/bg22.WebP" style="width: 100%; height: auto; object-fit: cover;" alt=""></div>
-          <div><img src="uploads/footer/bg23.WebP" style="width: 100%; height: auto; object-fit: cover;" alt=""></div>
-          <div><img src="uploads/footer/bg24.WebP" style="width: 100%; height: auto; object-fit: cover;" alt=""></div>
-          <div><img src="uploads/footer/bg25.WebP" style="width: 100%; height: auto; object-fit: cover;" alt=""></div>
-          <div><img src="uploads/footer/bg26.WebP" style="width: 100%; height: auto; object-fit: cover;" alt=""></div>
-          <div><img src="uploads/footer/bg27.WebP" style="width: 100%; height: auto; object-fit: cover;" alt=""></div>
-          <div><img src="uploads/footer/bg28.WebP" style="width: 100%; height: auto; object-fit: cover;" alt=""></div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="home.js"></script>
-  </body>
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content=Umino...>
+<title>Umino</title>
+<link rel=stylesheet href=style.css>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel=stylesheet>
+<script src=https://kit.fontawesome.com/5ce6811c48.js crossorigin=anonymous></script>
+</head>
+<body>
+<header>
+<div class=top-header>
+<div class=top-header-left>
+<span>+222-1800-2628</span>
+<span>blueskytechcompany@gmail.com</span>
+</div>
+<div class=top-header-center>
+Sign up for 10% off your first order: <a href=# aria-label="Điều hướng đến trang sign up">Sign Up</a>
+</div>
+<div class=top-header-right>
+<div>Our Stores</div>
+<div class=dropdown>
+<button class=dropbtn>
+English
+<i class="fa-solid fa-angle-down"></i>
+</button>
+<div class=dropdown-content>
+<div>VN</div>
+</div>
+</div>
+<div class=dropdown>
+<button class=dropbtn>
+United States (USD $)
+<i class="fa-solid fa-angle-down"></i>
+</button>
+<div class=dropdown-content>
+<div>VNĐ</div>
+</div>
+</div>
+</div>
+</div>
+<div id=header-menu>
+<div class=navbar>
+<div class=logo>
+<a href=# aria-label="Điều hướng đến trang chính"><img src=uploads/Logo.WebP alt="" style=width:92px;height:auto;object-fit:cover></a>
+</div>
+<div class=menu>
+<div class=dropdown>
+<button class=dropbtn>
+Home
+<i class="fa-solid fa-angle-down"></i>
+</button>
+<div class=dropdown-content>
+<a href=# aria-label="Điều hướng đến trang chính">Home 1</a>
+<a href=# aria-label="Điều hướng đến trang chính">Home 2</a>
+<a href=# aria-label="Điều hướng đến trang chính">Home 3</a>
+</div>
+</div>
+<div class=dropdown>
+<button class=dropbtn>
+Shop
+<i class="fa-solid fa-angle-down"></i>
+</button>
+<div class=dropdown-content>
+<a href=# aria-label="Điều hướng đến trang chính">Shop 1</a>
+<a href=# aria-label="Điều hướng đến trang chính">Shop 2</a>
+<a href=# aria-label="Điều hướng đến trang chính">Shop 3</a>
+</div>
+</div>
+<div class=dropdown>
+<button class=dropbtn>
+Product
+<i class="fa-solid fa-angle-down"></i>
+</button>
+<div class=dropdown-content>
+<a href=# aria-label="Điều hướng đến trang chính">Shirt</a>
+<a href=# aria-label="Điều hướng đến trang chính">Trousers</a>
+<a href=# aria-label="Điều hướng đến trang chính">Shoe</a>
+<a href=# aria-label="Điều hướng đến trang chính">Hat</a>
+</div>
+</div>
+<div class=dropdown>
+<button class=dropbtn>
+Page
+<i class="fa-solid fa-angle-down"></i>
+</button>
+<div class=dropdown-content>
+<a href=# aria-label="Điều hướng đến trang chính">Page 1</a>
+<a href=# aria-label="Điều hướng đến trang chính">Page 2</a>
+<a href=# aria-label="Điều hướng đến trang chính">Page 3</a>
+</div>
+</div>
+<div class=dropdown>
+<button class=dropbtn>
+Blog
+<i class="fa-solid fa-angle-down"></i>
+</button>
+<div class=dropdown-content>
+<a href=# aria-label="Điều hướng đến trang chính">Blog...</a>
+</div>
+</div>
+<div>
+<a href=# aria-label="Điều hướng đến trang chính">Sale</a>
+<a href=# aria-label="Điều hướng đến trang chính">Buy Umino!</a>
+</div>
+</div>
+<div class=icon onclick=toggleMenu()>
+<i class="fa-solid fa-bars"></i>
+</div>
+<div class=menu-mb id=menu>
+<div>
+<div class=menu-mb-title>
+<div>MENU</div>
+<div onclick=toggleMenu()><i class=icon-x></i></div>
+</div>
+<div class=menu-mb-content>
+<div>
+<div class=menu-mb-content-list onclick=subMenu(this)>
+Home
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+<div class=menu-mb-list>
+<div class=submenu-mb-title>
+<div onclick=subMenu(this) class=close-menu><i class="fa-solid fa-chevron-left" style=padding-right:8px></i>MENU</div>
+<div onclick=toggleMenu()><i class=icon-x></i></div>
+</div>
+<a href=# aria-label="Điều hướng đến trang chính">Home 1</a>
+<a href=# aria-label="Điều hướng đến trang chính">Home 2</a>
+<a href=# aria-label="Điều hướng đến trang chính">Home 3</a>
+</div>
+</div>
+<div>
+<div class=menu-mb-content-list onclick=subMenu(this)>
+Shop
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+<div class=menu-mb-list>
+<div class=submenu-mb-title>
+<div onclick=subMenu(this) class=close-menu><i class="fa-solid fa-chevron-left" style=padding-right:8px></i>MENU</div>
+<div onclick=toggleMenu()><i class=icon-x></i></div>
+</div>
+<a href=# aria-label="Điều hướng đến trang chính">Shop 1</a>
+<a href=# aria-label="Điều hướng đến trang chính">Shop 2</a>
+<a href=# aria-label="Điều hướng đến trang chính">Shop 3</a>
+</div>
+</div>
+<div>
+<div class=menu-mb-content-list onclick=subMenu(this)>
+Product
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+<div class=menu-mb-list>
+<div class=submenu-mb-title>
+<div onclick=subMenu(this) class=close-menu><i class="fa-solid fa-chevron-left" style=padding-right:8px></i>MENU</div>
+<div onclick=toggleMenu()><i class=icon-x></i></div>
+</div>
+<a href=# aria-label="Điều hướng đến trang chính">Shirt</a>
+<a href=# aria-label="Điều hướng đến trang chính">Trousers</a>
+<a href=# aria-label="Điều hướng đến trang chính">Shoe</a>
+<a href=# aria-label="Điều hướng đến trang chính">Hat</a>
+</div>
+</div>
+<div>
+<div class=menu-mb-content-list onclick=subMenu(this)>
+Page
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+<div class=menu-mb-list>
+<div class=submenu-mb-title>
+<div onclick=subMenu(this) class=close-menu><i class="fa-solid fa-chevron-left" style=padding-right:8px></i>MENU</div>
+<div onclick=toggleMenu()><i class=icon-x></i></div>
+</div>
+<a href=# aria-label="Điều hướng đến trang chính">Page 1</a>
+<a href=# aria-label="Điều hướng đến trang chính">Page 2</a>
+<a href=# aria-label="Điều hướng đến trang chính">Page 3</a>
+</div>
+</div>
+<div>
+<div class=menu-mb-content-list onclick=subMenu(this)>
+Blog
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+<div class=menu-mb-list>
+<div class=submenu-mb-title>
+<div onclick=subMenu(this) class=close-menu><i class="fa-solid fa-chevron-left" style=padding-right:8px></i>MENU</div>
+<div onclick=toggleMenu()><i class=icon-x></i></div>
+</div>
+<a href=# aria-label="Điều hướng đến trang chính">Blog...</a>
+</div>
+</div>
+<div class=menu-user>
+<a href=# aria-label="Điều hướng đến trang chính">Sale</a>
+<a href=# aria-label="Điều hướng đến trang chính">Buy Umino!</a>
+<a href=# aria-label="Điều hướng đến trang chính"><i class="fa-regular fa-clock" style=padding-right:8px></i>Recently Viewed</a>
+<a href=# aria-label="Điều hướng đến trang chính"><i class="fa-regular fa-heart" style=padding-right:8px></i>Wishlist</a>
+<a href=# aria-label="Điều hướng đến trang chính"><i class="fa-regular fa-user" style=padding-right:8px></i>Login / Register</a>
+</div>
+<div class=language>
+Language
+<div>
+<a href=# aria-label="Điều hướng đến trang chính" style=text-decoration:underline>English</a>
+<a href=# aria-label="Điều hướng đến trang chính">VietNam</a>
+<a href=# aria-label="Điều hướng đến trang chính">English</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=navbar-right>
+<i class="fa-solid fa-magnifying-glass" id=search-icon></i>
+<input id=search-input placeholder=search...>
+<div class=mobile>
+<i class="fa-regular fa-user"></i>
+<i class="fa-regular fa-clock"></i>
+</div>
+<div class=mobile style=position:relative>
+<i class="fa-regular fa-heart"></i>
+<span class=badge>2</span>
+</div>
+<div style=position:relative>
+<i class="fa-solid fa-cart-shopping"></i>
+<span class=badge>4</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class=slideshow-container>
+<div class="mySlides fade">
+<img src=uploads/slider/slide.webp alt="">
+<div class=text>
+<h1 class=text-lines>
+Stylish <br>
+Top Trending
+</h1>
+<p class=text-lines>So soft you don't want to take it off.</p>
+<button class=text-lines>Explore Now</button>
+</div>
+</div>
+<div class="mySlides fade">
+<img src=uploads/slider/slide.webp alt="">
+<div class=text>
+<h1 class=text-lines>
+Stylish <br>
+Top Trending
+</h1>
+<p class=text-lines>So soft you don't want to take it off.</p>
+<button class=text-lines>Explore Now</button>
+</div>
+</div>
+<div class="mySlides fade">
+<img src=uploads/slider/slide.webp alt="">
+<div class=text>
+<h1 class=text-lines>
+Stylish <br>
+Top Trending
+</h1>
+<p class=text-lines>So soft you don't want to take it off.</p>
+<button class=text-lines>Explore Now</button>
+</div>
+</div>
+<div class=prev onclick=plusSlides(-1)><i class="fa-solid fa-angle-left"></i></div>
+<div class=next onclick=plusSlides(1)><i class="fa-solid fa-angle-right"></i></div>
+<div class=dot-icon>
+<span class=dot onclick=currentSlide(1)></span>
+<span class=dot onclick=currentSlide(2)></span>
+<span class=dot onclick=currentSlide(3)></span>
+</div>
+</div>
+<div class=categories>
+<div class=categories-left>
+<img src=uploads/categories/bg1.WebP alt="">
+<div>
+<div class=href>
+<a href=# aria-label="Điều hướng đến trang">Tops</a>
+</div>
+</div>
+</div>
+<div class=categories-center>
+<div class=categories-center-top>
+<img src=uploads/categories/bg2.WebP alt="">
+<div>
+<div class=href>
+<a href=# aria-label="Điều hướng đến trang">Sunglasses</a>
+</div>
+</div>
+</div>
+<div style=display:flex>
+<div class=categories-center-bottom-left>
+<img src=uploads/categories/bg3.WebP alt="">
+<div>
+<div class=href>
+<a href=# aria-label="Điều hướng đến trang">Sandals</a>
+</div>
+</div>
+</div>
+<div class=categories-center-bottom-right>
+<img src=uploads/categories/bg4.WebP alt="">
+<div>
+<div class=href>
+<a href=# aria-label="Điều hướng đến trang">Bags</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=categories-right>
+<img src=uploads/categories/bg5.WebP alt="">
+<div>
+<div class=href>
+<a href=# aria-label="Điều hướng đến trang">Sneaker</a>
+</div>
+</div>
+</div>
+</div>
+<div class=container>
+<div class=top-trending>
+<div class=top-trending-title>
+<h1>Top Trending</h1>
+<p>
+Here’s some of our most popular products people are in love with.
+</p>
+</div>
+<div class=top-trending-products>
+<div class=products>
+<div class=products-img>
+<img src=uploads/products/img.WebP class=image alt="">
+<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<div class=sale>
+</div>
+<div class=add-cart>
+<button>Add to cart</button>
+</div>
+<div class=btn-heart>
+<button><i class="fa-regular fa-heart"></i></button>
+<button><i class="fa-regular fa-eye"></i></button>
+</div>
+</div>
+<div class=products-title>
+<p>Square Textured Striped</p>
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<br>
+<span> $<span>150.00</span> </span>
+<div style=display:flex>
+<div class="color-bark focus" data-img-index=0>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=1>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=2>
+<div class=color></div>
+</div>
+</div>
+</div>
+</div>
+<div class=products>
+<div class=products-img>
+<img src=uploads/products/bg7.WebP class=image alt="">
+<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img src=uploads/products/img.WebP class=image alt="" style=display:none>
+<div class=sale>
+<div>-10%</div>
+<div>Pre-Order</div>
+</div>
+<div class=add-cart>
+<button>Add to cart</button>
+</div>
+<div class=btn-heart>
+<button><i class="fa-regular fa-heart"></i></button>
+<button><i class="fa-regular fa-eye"></i></button>
+</div>
+</div>
+<div class=products-title>
+<p>Square Textured Striped</p>
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<br>
+<span>
+<span style=color:#d73f0f>$<span>150.00</span></span>
+<span style="color:#555;text-decoration:line-through 1.5px">$<span>490.00</span></span>
+</span>
+<div style=display:flex>
+<div class="color-bark focus" data-img-index=0>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=1>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=2>
+<div class=color></div>
+</div>
+</div>
+</div>
+</div>
+<div class=products>
+<div class=products-img>
+<img src=uploads/products/bg6.WebP class=image alt="">
+<img src=uploads/products/img.WebP class=image alt="" style=display:none>
+<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<div class=sale>
+</div>
+<div class=add-cart>
+<button>Add to cart</button>
+</div>
+<div class=btn-heart>
+<button><i class="fa-regular fa-heart"></i></button>
+<button><i class="fa-regular fa-eye"></i></button>
+</div>
+</div>
+<div class=products-title>
+<p>Square Textured Striped</p>
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<br>
+<span> $<span>150.00</span> </span>
+<div style=display:flex>
+<div class="color-bark focus" data-img-index=0>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=1>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=2>
+<div class=color></div>
+</div>
+</div>
+</div>
+</div>
+<div class=products>
+<div class=products-img>
+<img src=uploads/products/bg8.WebP class=image alt="">
+<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<div class=sale>
+</div>
+<div class=add-cart>
+<button>Add to cart</button>
+</div>
+<div class=btn-heart>
+<button><i class="fa-regular fa-heart"></i></button>
+<button><i class="fa-regular fa-eye"></i></button>
+</div>
+</div>
+<div class=products-title>
+<p>Square Textured Striped</p>
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<br>
+<span> $<span>145.00</span> - $<span>169.00</span> </span>
+<div style=display:flex>
+<div class="color-bark focus" data-img-index=0>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=1>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=2>
+<div class=color></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=banner>
+<div class=banner-left>
+<div>
+<img class=banner-img src=uploads/banner/bg9.WebP alt="">
+</div>
+<p>Set Nightwear</p>
+<p>Explore the Lookbook</p>
+<div class=banner-left-line></div>
+</div>
+<div class=banner-center>
+<div>
+<img class=banner-img src=uploads/banner/bg10.WebP alt="">
+</div>
+<p>Handbag Style</p>
+<p>Explore the Lookbook</p>
+<div class=banner-center-line></div>
+</div>
+<div class=banner-right>
+<div>
+<img class=banner-img src=uploads/banner/bg11.WebP alt="">
+</div>
+<p>Made for Your</p>
+<p>Explore the Lookbook</p>
+<div class=banner-right-line></div>
+</div>
+</div>
+<div class=you-must-have>
+<div class=top-trending-title>
+<h1>You Must Have</h1>
+<p>
+Here’s some of our most popular products people are in love with.
+</p>
+</div>
+<div class=top-trending-products>
+<div class=products>
+<div class=products-img>
+<img src=uploads/products/bg12.WebP class=image alt="">
+<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<div class=sale>
+<div></div>
+<div></div>
+<div>Sold Out</div>
+</div>
+<div class=add-cart>
+<button>Add to cart</button>
+</div>
+<div class=btn-heart>
+<button><i class="fa-regular fa-heart"></i></button>
+<button><i class="fa-regular fa-eye"></i></button>
+</div>
+</div>
+<div class=products-title>
+<p>Square Textured Striped</p>
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<br>
+<span> $<span>150.00</span> </span>
+<div style=display:flex>
+<div class="color-bark focus" data-img-index=0>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=1>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=2>
+<div class=color></div>
+</div>
+</div>
+</div>
+</div>
+<div class=products>
+<div class=products-img>
+<img src=uploads/products/bg13.WebP class=image alt="">
+<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img src=uploads/products/img.WebP class=image alt="" style=display:none>
+<div class=sale>
+</div>
+<div class=add-cart>
+<button>Add to cart</button>
+</div>
+<div class=btn-heart>
+<button><i class="fa-regular fa-heart"></i></button>
+<button><i class="fa-regular fa-eye"></i></button>
+</div>
+</div>
+<div class=products-title>
+<p>Square Textured Striped</p>
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<br>
+<span>
+<span style=color:#d73f0f>$<span>150.00</span></span>
+<span style="color:#555;text-decoration:line-through 1.5px">$<span>490.00</span></span>
+</span>
+<div style=display:flex>
+<div class="color-bark focus" data-img-index=0>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=1>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=2>
+<div class=color></div>
+</div>
+</div>
+</div>
+</div>
+<div class=products>
+<div class=products-img>
+<img src=uploads/products/bg14.WebP class=image alt="">
+<img src=uploads/products/img.WebP class=image alt="" style=display:none>
+<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<div class=sale>
+<div>-10%</div>
+<div>Pre-Order</div>
+</div>
+<div class=add-cart>
+<button>Add to cart</button>
+</div>
+<div class=btn-heart>
+<button><i class="fa-regular fa-heart"></i></button>
+<button><i class="fa-regular fa-eye"></i></button>
+</div>
+</div>
+<div class=products-title>
+<p>Square Textured Striped</p>
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<br>
+<span> $<span>150.00</span> </span>
+<div style=display:flex>
+<div class="color-bark focus" data-img-index=0>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=1>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=2>
+<div class=color></div>
+</div>
+</div>
+</div>
+</div>
+<div class=products>
+<div class=products-img>
+<img src=uploads/products/bg15.WebP class=image alt="">
+<img src=uploads/products/bg6.WebP class=image alt="" style=display:none>
+<img src=uploads/products/bg7.WebP class=image alt="" style=display:none>
+<div class=sale>
+</div>
+<div class=add-cart>
+<button>Add to cart</button>
+</div>
+<div class=btn-heart>
+<button><i class="fa-regular fa-heart"></i></button>
+<button><i class="fa-regular fa-eye"></i></button>
+</div>
+</div>
+<div class=products-title>
+<p>Square Textured Striped</p>
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+<br>
+<span> $<span>145.00</span> - $<span>169.00</span> </span>
+<div style=display:flex>
+<div class="color-bark focus" data-img-index=0>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=1>
+<div class=color></div>
+</div>
+<div class=color-bark data-img-index=2>
+<div class=color></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr-desktop hr-mb">
+<div class=shop-instagram>
+<div class=top-trending-title>
+<h1>Shop by Gram</h1>
+<p>
+Inspire and let yourself be inspired, from one unique fashion to another.
+</p>
+</div>
+<div class=shop-instagram-products>
+<div class=instagram-product>
+<img src=uploads/products/bg16.WebP alt="">
+<div>
+<img src=uploads/icon.WebP alt="">
+</div>
+</div>
+<div class=instagram-product>
+<img src=uploads/products/bg21.WebP alt="">
+<div>
+<img src=uploads/icon.WebP alt="">
+</div>
+</div>
+<div class=instagram-product>
+<img src=uploads/products/bg17.WebP alt="">
+<div>
+<img src=uploads/icon.WebP alt="">
+</div>
+</div>
+<div class=instagram-product>
+<img src=uploads/products/bg18.WebP alt="">
+<div>
+<img src=uploads/icon.WebP alt="">
+</div>
+</div>
+<div class=instagram-product>
+<img src=uploads/products/bg19.WebP alt="">
+<div>
+<img src=uploads/icon.WebP alt="">
+</div>
+</div>
+<div class=instagram-product>
+<img src=uploads/products/bg20.WebP alt="">
+<div>
+<img src=uploads/icon.WebP alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div>
+<div class=footer-logo>
+<div class=logo>
+<a href=# aria-label="Điều hướng đến trang chính"><img src=uploads/Logo.WebP alt="" style=width:92px;height:auto;object-fit:cover></a>
+</div>
+<p>268 St, South New York/NY 98944, United States</p>
+<p>+222-1800-2628</p>
+<p class=last>blueskytechcompany@gmail.com</p>
+<div class=footer-logo-icon>
+<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon1.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon2.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon3.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon4.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon5.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon6.WebP alt=""></a>
+<a href=# aria-label="Điều hướng đến trang"><img src=uploads/footer/icon7.WebP alt=""></a>
+</div>
+</div>
+<div class=footer-categories>
+<div>
+<h1>Hot Categories</h1>
+</div>
+<div class=footer-categories-list>
+<a href=# aria-label="Điều hướng đến trang chính">Special Offers</a>
+<a href=# aria-label="Điều hướng đến trang chính">Performance</a>
+<a href=# aria-label="Điều hướng đến trang chính">T-shirts</a>
+<a href=# aria-label="Điều hướng đến trang chính">Underwear</a>
+<a href=# aria-label="Điều hướng đến trang chính">Top Brands</a>
+<a href=# aria-label="Điều hướng đến trang chính">Online Exclusive</a>
+</div>
+</div>
+<div class=footer-service>
+<h1>Customer Service</h1>
+<div class=footer-categories-list>
+<a href=# aria-label="Điều hướng đến trang chính">Privacy Policy</a>
+<a href=# aria-label="Điều hướng đến trang chính">Refund Policy</a>
+<a href=# aria-label="Điều hướng đến trang chính">Shipping & Return</a>
+<a href=# aria-label="Điều hướng đến trang chính">Term & Conditions</a>
+<a href=# aria-label="Điều hướng đến trang chính">Advanced Search</a>
+<a href=# aria-label="Điều hướng đến trang chính">Theme FAQs</a>
+<a href=# aria-label="Điều hướng đến trang chính">Store Locations</a>
+</div>
+</div>
+<div class=footer-email>
+<h1>Sign Up to Newsletter</h1>
+<p>
+Enter your email address to get $10 off your first order and free shipping. Updates information on Sales and Offers.
+</p>
+<form action=# method=post>
+<input name=email id=email placeholder="Enter your email...">
+<button>Subscribe</button>
+</form>
+</div>
+</div>
+<hr class="hr-footer hr-mb">
+<div class=footer-bottom>
+<div class=footer-bottom-left>
+<div class=dropdown>
+<button class=dropbtn style=color:#555>
+English
+<i class="fa-solid fa-angle-down"></i>
+</button>
+<div class=dropdown-content>
+<div>VN</div>
+</div>
+</div>
+<div class=dropdown>
+<button class=dropbtn style=color:#555>
+United States (USD $)
+<i class="fa-solid fa-angle-down"></i>
+</button>
+<div class=dropdown-content>
+<div>VNĐ</div>
+</div>
+</div>
+</div>
+<div class=copyright>
+<p>© 2022 Umino Store. All Rights Reserved.</p>
+</div>
+<div class=payment>
+<div><img src=uploads/footer/bg22.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img src=uploads/footer/bg23.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img src=uploads/footer/bg24.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img src=uploads/footer/bg25.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img src=uploads/footer/bg26.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img src=uploads/footer/bg27.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+<div><img src=uploads/footer/bg28.WebP style=width:100%;height:auto;object-fit:cover alt=""></div>
+</div>
+</div>
+</footer>
+<script src=home.js></script>
+</body>
 </html>
